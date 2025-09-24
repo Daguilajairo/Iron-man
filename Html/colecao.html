@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Adamina&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Gothic&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Homem de Ferro</title>
+</head>
+
+<body class="bg-[url(/img/homem-de-ferro-3.jpg)] m-0 p-0 bg-cover bg-center bg-no-repeat h-screen overflow-x-hidden ">
+
+    <div class="absolute inset-0">
+        <img src="/img/smoke.png" class="w-full h-full xl:h-175 object-cover opacity-40" alt="Fumaça">
+    </div>
+
+   <header class=" relative z-10 w-lg h-20 text-[#e0b56d] text-xl flex justify-center items-center mx-7  pr-50 sm:w-xl sm:mx-33 md:mx-44 md:text-2xl  lg:w-2xl lg:mx-15  xl:mx-3 xl:w-3xl xl:justify-between xl:pr-50 xl:ml-28 xl:text-2xl lg:mx-36 xl:ml-36">
+        <a href="https://www.marvel.com/" target="_blank"><img class="w-16 relative z-10 mr-15 lg:w-25 md:mr-50 " src="../img/logo-marvel.png"
+                alt="Logo Marvel"></a>
+        <ul class="flex gap-8 font-[Marvel]">
+            <a href="../Html/index.html">
+                <li class="hover:scale-110 transition duration-300 hover:text-red-600 cursor-pointer  hover:transi">Home
+                </li>
+            </a>
+            <a href="../Html/historia.html">
+                <li class="hover:scale-110 transition duration-300 hover:text-red-600 cursor-pointer">História</li>
+            </a>
+            <a href="./colecao.html">
+                <li class="hover:scale-110 transition duration-300 hover:text-red-600 cursor-pointer">Coleção</li>
+            </a>
+        </ul>
+    </header>
+
+
+    <section class="relative z-10 w-xl h-30 mb-8  mx-30 md:mx-0   ">
+        <div class="flex items-center pt-4 text-[#e0b56d] font-[Marvel] sm:ml-35   ">
+            <h1
+                class="text-[50px] md:text-[100px] xl:text-[150px] xl:mb-10  bg-gradient-to-b from-yellow-800 via-yellow-600 to-yellow-400 bg-clip-text text-transparent leading-none hover:bg-gradient-to-b hover:from-red-500 hover:via-red-600 hover:to-red-950 hover:bg-clip-text hover:text-transparent hover:leading-none transition duration-800">
+                COLEÇÃO</h1>
+
+        </div>
+    </section>
+
+    <div>
+        <section class="relative z-10 w-150 h-50 mx-12 flex items-center gap-2 text-[#e0b56d] sm:w-160 md:mx-32 xl:mt-30 xl:w-250  ">
+            <button id="prev" class="w-8 h-8 bg-red-600 cursor-pointer scale-x-[-1] hover:scale-110 hover:scale-x-[-1] ">
+                <img src="../img/maior.png" alt="Seta esquerda">
+            </button>
+
+            <div class="relative w-160 h-full  overflow-hidden md:w-240 md:h-60 xl:h-70 xl:w-250 ">
+                <div id="carousel" class="flex transition-transform duration-500 h-full" >
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filme-homem-de-ferro-1.jpg" alt="">
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filme-homem-de-ferro-2.jpg" alt="">
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filme-homem-de-ferro-3.jpeg" alt="">
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filme-os-vingadores-1.jpg" alt="">
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filme-os-vingadores-2.jpg" alt="">
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filme-os-vingadores-3.jpg" alt="">
+                    <img class="w-160 border-2 border-[#e0b46d] rounded-md flex-shrink-0"
+                        src="../img/filmes-os-vingadores-4.jpg" alt="">
+                </div>
+            </div>
+
+            <button id="next" class="w-8 h-8 bg-red-600 cursor-pointer hover:scale-110 ">
+                <img src="../img/maior.png" alt="Seta direita">
+            </button>
+            <div class="w-150 ml-10">
+            <h1 class="invisible movie-title text-[#e0b56d] text-[48px] font-[Marvel] 
+               bg-gradient-to-b from-yellow-800 via-yellow-600 to-yellow-400 bg-clip-text text-transparent 
+               leading-none hover:bg-gradient-to-b hover:from-red-500 hover:via-red-600 hover:to-red-950 
+               hover:bg-clip-text hover:text-transparent hover:leading-none transition duration-800 sm:visible ">
+            </h1>
+            </div>
+        </section>
+
+        <div class=" relative z-10 mx-28 mt-2 ">
+            <a href="https://www.marvel.com/" target="_blank"><button class="relative z-10 w-40 p-4 flex items-center justify-center font-bold text-2xl mt-15  rounded-sm cursor-pointer
+         text-white bg-[#ed1b24] hover:scale-110 transition duration-100 sm:ml-33 md:mx-10">Marvel <span class=" ">&#8594</span></button></a>
+        </div>
+        <div class=" relative z-10 w-42 mx-28 mt-4 flex gap-5 justify-center font-[Marvel] sm:ml-60 md:mx-37">
+            <img class="relative z-10 w-8 cursor-pointer p-1 border-2 border-red-900 rounded-[50%] hover:scale-110"
+                src="../img/logo-facebook.png" alt="">
+            <img class="relative z-10 w-8 cursor-pointer p-1 border-2 border-red-900 rounded-[50%] hover:scale-110"
+                src="../img/logo-instagram.png" alt="">
+            <img class=" relative z-10 w-8 cursor-pointer p-1 border-2 border-red-900 rounded-[50%] hover:scale-110 "
+                src="../img/logo-whatsapp.png" alt="">
+        </div>
+
+
+
+
+
+
+        <script src="../Js/script.js"></script>
+</body>
+
+</html>
